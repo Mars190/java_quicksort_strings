@@ -19,15 +19,15 @@ public class Quicksort {
         int j = end - 1;
 
         while (i <= j) {
-            while (i <= j && array[i].compareTo(p) < 0) { // array[i] <= p
+            while (i <= j && array[i].compareTo(p) < 0) { // Wenn array[i] weiter vorne ist als p
                 i++;
             }
 
-            while (j >= i && array[j].compareTo(p) > 0) { // array[j] > p
+            while (j >= i && array[j].compareTo(p) > 0) { // Wenn array[j] weiter hinten ist als p
                 j--;
             }
 
-            if (i < j) {
+            if (i < j) { // überkreuzung
                 swap(i, j, array);
             }
         }
