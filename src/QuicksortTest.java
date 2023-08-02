@@ -5,9 +5,9 @@ public class QuicksortTest {
 
     @Test
     public void testQuicksort() {
-        int[] input = { 2, 9, 3, 2, 0, 5, 2, 0, 8, 1 };
-        int[] expectedOutput = { 0, 0, 1, 2, 2, 2, 3, 5, 8, 9 };
-        int[] output = Quicksort.quicksort(input);
+        String[] input = {"max21", "an1on7", "jane123", "user456", "alpha22", "beta99", "gamma123", "test007"};
+        String[] expectedOutput = {"alpha22", "an1on7", "beta99", "gamma123", "jane123", "max21", "test007", "user456"};
+        String[] output = Quicksort.sort(input);
 
         assertArrayEquals(expectedOutput, output);
     }
